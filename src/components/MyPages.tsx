@@ -52,7 +52,7 @@ const MyPages = ({ pages }: { pages: any[] }) => {
                   {expandedIndex === index ? "Collapse" : "Expand"}
                 </button>
                 <button
-                  onClick={(e) => handleRemove(index)}
+                  onClick={() => handleRemove(index)}
                   className="text-red-500 text-sm"
                 >
                   <svg
