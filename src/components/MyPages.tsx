@@ -13,11 +13,6 @@ const MyPages = ({ pages }: { pages: any[] }) => {
   };
 
   const handleRemove = (index: number) => {
-    const page = updatedPages[index];
-    page.sites.forEach((site: string) => {
-      window.open(site, "_blank");
-    });
-
     const newPages = updatedPages.filter((_, i) => i !== index);
     setUpdatedPages(newPages);
     localStorage.setItem("pages", JSON.stringify(newPages));
@@ -43,7 +38,13 @@ const MyPages = ({ pages }: { pages: any[] }) => {
           <div key={index} className="bg-[#333] p-4 rounded space-y-4">
             <div className="flex justify-between items-center cursor-pointer">
               <h3 className="text-white text-lg font-semibold">{page.name}</h3>
-              <div>
+              <div className="flex items-center">
+                <button
+                  onClick={() => handleOpenAll(index)}
+                  className="text-green-500 text-sm mr-4"
+                >
+                  Open All
+                </button>
                 <button
                   onClick={() => handleToggle(index)}
                   className="text-blue-500 text-sm mr-4"
@@ -51,16 +52,23 @@ const MyPages = ({ pages }: { pages: any[] }) => {
                   {expandedIndex === index ? "Collapse" : "Expand"}
                 </button>
                 <button
-                  onClick={() => handleRemove(index)}
+                  onClick={(e) => handleRemove(index)}
                   className="text-red-500 text-sm"
                 >
-                  X
-                </button>
-                <button
-                  onClick={() => handleOpenAll(index)}
-                  className="text-green-500 text-sm ml-4"
-                >
-                  Open All
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    width="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                  >
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
                 </button>
               </div>
             </div>
