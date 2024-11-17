@@ -2,6 +2,9 @@
 
 harbor is a chrome extension designed to allow the user to quickly access a set of websites or a website that they are using frequently. it lets you save a group of websites or just one website to open with a single click.
 
+## website
+<a href="https://harborit.netlify.app/" rel="nofollow"><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" /><a/>
+
 ## features
 
 - save websites for easy access.
