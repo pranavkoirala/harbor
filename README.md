@@ -1,6 +1,9 @@
-# harbor extension
+# harbor
 
-harbor is a chrome extension designed to allow the user to quickly access a set of websites or a website that they are using frequently. it lets you save a group of websites or just one website to open with a single click.
+harbor is a website designed to allow the user to quickly access a set of websites or a website that they are using frequently. it lets you save a group of websites or just one website to open with a single click.
+
+this sounds pretty dumb but i really needed to open multiple tabs and the first 5 websites on google literally
+all did not work which is utterly gobsmacking to me considering the "open all" functionality was the easiest to make LMFAO.
 
 ## features
 
@@ -8,13 +11,6 @@ harbor is a chrome extension designed to allow the user to quickly access a set 
 - group websites together.
 - customize groups based on needs.
 - open group or single website easily.
-
-## installation
-
-this extension will be available on the chrome web store.
-To Be Added.
-
-<a href="https://github.com/pranavkoirala" rel="nofollow"><img src="https://camo.githubusercontent.com/ae9f0d218421532b55008591703c5e97c74bcfeb32987ff6cd881bf4e605814d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4368726f6d655f5765625f53746f72652d6237626466383f7374796c653d666f722d7468652d6261646765266c6f676f3d476f6f676c654368726f6d65266c6f676f436f6c6f723d323432373361" data-canonical-src="https://img.shields.io/badge/Chrome_Web_Store-b7bdf8?style=for-the-badge&amp;logo=GoogleChrome&amp;logoColor=24273a" style="max-width: 100%;"></a>
 
 #### manual installation
 
@@ -25,16 +21,8 @@ To Be Added.
 ```sh
 cd harbor
 npm install
-npm run build
+npm run dev
 ```
-
-3. navigate to `chrome://extensions/` in your browser.
-4. enable developer mode.
-5. click 'load unpacked' and select the extension build directory.
-
-## credits
-
-[5tigerjelly/chrome-extension-react-template](https://github.com/5tigerjelly/chrome-extension-react-template).
 
 ## license
 
