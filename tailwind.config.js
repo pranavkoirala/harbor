@@ -4,5 +4,8 @@ export default {
   theme: {
     extend: {},
   },
+  fonts: {
+    mono: ["Sono", "monospace"],
+  },
   plugins: [],
 };
