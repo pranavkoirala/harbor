@@ -6,6 +6,7 @@ this sounds pretty dumb but i really needed to open multiple tabs and the first 
 all did not work which is utterly gobsmacking to me considering the "open all" functionality was the easiest to make LMFAO.
 
 ## website
+
 <a href="https://harborit.netlify.app/" rel="nofollow"><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" /><a/>
 
 ## features
