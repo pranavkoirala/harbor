@@ -30,7 +30,7 @@ const Popup = () => {
   };
 
   return (
-    <div className="bg-[#101010] h-[400px] w-[400px] text-white font-mono p-4 placeholder-black">
+    <div className="bg-[#101010] h-screen w-screen text-white font-mono p-4 placeholder-black">
       <h1 className="">Your Websites</h1>
       <div className="tabs flex flex-col items-start font-bold mt-4">
         <button
